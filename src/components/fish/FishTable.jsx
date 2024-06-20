@@ -5,8 +5,8 @@ import FishFilter from './FishFilter';
 
 const FishTable = () => {
   const [searchQuery, setSearchQuery] = useState("");
-  const [hemisphere, setHemisphere] = useState("north");
-  const [selectedMonth, setSelectedMonth] = useState("");
+  const [hemisphere, setHemisphere] = useState("...");
+  const [selectedMonth, setSelectedMonth] = useState("All");
   const [sortConfig, setSortConfig] = useState({ key: 'sellPrice', direction: 'asc' });
   const [originalData, setOriginalData] = useState([...FishData]); 
   const handleSearchChange = (query) => {

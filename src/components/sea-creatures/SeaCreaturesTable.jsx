@@ -1,14 +1,19 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect  } from 'react';
 import SeaCreaturesDetails from './SeaCreaturesDetails';
 import SeaCreaturesData from '../../data/SeaCreaturesData.json';
 import SeaCreaturesFilter from './SeaCreaturesFilter';
 
 const SeaCreaturesTable = () => {
   const [searchQuery, setSearchQuery] = useState("");
-  const [hemisphere, setHemisphere] = useState("north");
-  const [selectedMonth, setSelectedMonth] = useState("");
+  const [hemisphere, setHemisphere] = useState("...");
+  const [selectedMonth, setSelectedMonth] = useState("All");
   const [sortConfig, setSortConfig] = useState({ key: 'sellPrice', direction: 'asc' });
-  const [originalData, setOriginalData] = useState([...SeaCreaturesData]); 
+  const [filteredSeaCreature, setFilteredSeaCreature] = useState([...SeaCreaturesData]); 
+
+  useEffect(() => {
+    applyFilters();
+  }, [searchQuery, hemisphere, selectedMonth, sortConfig]);
+
   const handleSearchChange = (query) => {
     setSearchQuery(query);
   };
@@ -26,7 +31,7 @@ const SeaCreaturesTable = () => {
     setHemisphere("...");
     setSelectedMonth("All");
     setSortConfig({ key: 'sellPrice', direction: 'asc' });
-    setOriginalData([...SeaCreaturesData]);
+    setFilteredSeaCreature([...SeaCreaturesData]); 
   };
 
   const handleSort = (key) => {
@@ -37,33 +42,37 @@ const SeaCreaturesTable = () => {
     setSortConfig({ key, direction });
   };
 
-  const filteredSeaCreatures = originalData.filter((SeaCreature) => {
-    const nameMatches = SeaCreature.name.toLowerCase().includes(searchQuery.toLowerCase());
+  const applyFilters = () => {
+    let filtered = SeaCreaturesData.filter((SeaCreature) => {
+      const nameMatches = SeaCreature.name.toLowerCase().includes(searchQuery.toLowerCase());
 
-    let hemisphereMatches = true;
-    if (hemisphere !== "...") {
-      hemisphereMatches = Array.isArray(SeaCreature[hemisphere]) && SeaCreature[hemisphere].some((availability, index) => selectedMonth === "" || (availability && index === parseInt(selectedMonth)));
-    }
+      let hemisphereMatches = true;
+      if (hemisphere !== "...") {
+        hemisphereMatches = Array.isArray(SeaCreature[hemisphere]) && SeaCreature[hemisphere].some((availability, index) => selectedMonth === "All" || (availability && index === parseInt(selectedMonth)));
+      } 
+    
+      let monthMatches = true;
+      if (selectedMonth !== "All") {
+        monthMatches = Array.isArray(SeaCreature[hemisphere]) && SeaCreature[hemisphere][parseInt(selectedMonth)] === 1;
+      }
 
-    let monthMatches = true;
-    if (selectedMonth !== "All") {
-      monthMatches = Array.isArray(SeaCreature[hemisphere]) && SeaCreature[hemisphere][parseInt(selectedMonth)] === 1;
-    }
+      return nameMatches && hemisphereMatches && monthMatches;
+    });
 
-    return nameMatches && hemisphereMatches && monthMatches;
-  });
+    filtered = filtered.sort((a, b) => {
+      if (a[sortConfig.key] < b[sortConfig.key]) {
+        return sortConfig.direction === 'asc' ? -1 : 1;
+      }
+      if (a[sortConfig.key] > b[sortConfig.key]) {
+        return sortConfig.direction === 'asc' ? 1 : -1;
+      }
+      return 0;
+    });
 
-  const sortedSeaCreature = filteredSeaCreatures.sort((a, b) => {
-    if (a[sortConfig.key] < b[sortConfig.key]) {
-      return sortConfig.direction === 'asc' ? -1 : 1;
-    }
-    if (a[sortConfig.key] > b[sortConfig.key]) {
-      return sortConfig.direction === 'asc' ? 1 : -1;
-    }
-    return 0;
-  });
+    const displayedSeaCreature = filtered.map((SeaCreature, index) => ({ ...SeaCreature, displayId: index + 1 }));
+    setFilteredSeaCreature(displayedSeaCreature);
 
-  const displayedSeaCreature = sortedSeaCreature.map((SeaCreature, index) => ({ ...SeaCreature, displayId: index + 1 }));
+  };
 
 
   return (
@@ -93,7 +102,7 @@ const SeaCreaturesTable = () => {
           </tr>
         </thead>
         <tbody>
-          {displayedSeaCreature.map((SeaCreature, index) => (
+          {filteredSeaCreature.map((SeaCreature, index) => (
             <SeaCreaturesDetails key={index} data={SeaCreature} />
           ))}
         </tbody>

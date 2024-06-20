@@ -5,8 +5,8 @@ import BugsFilter from './BugFilter';
 
 const BugsTable = () => {
   const [searchQuery, setSearchQuery] = useState("");
-  const [hemisphere, setHemisphere] = useState("north");
-  const [selectedMonth, setSelectedMonth] = useState("");
+  const [hemisphere, setHemisphere] = useState("...");
+  const [selectedMonth, setSelectedMonth] = useState("All");
   const [sortConfig, setSortConfig] = useState({ key: 'sellPrice', direction: 'asc' });
   const [originalData, setOriginalData] = useState([...BugData]); 
   const handleSearchChange = (query) => {

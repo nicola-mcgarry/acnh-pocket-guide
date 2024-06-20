@@ -31,8 +31,8 @@ const SeaCreaturesFilter = ({ onSearchChange, onHemisphereChange, onMonthChange,
               onChange={(e) => onHemisphereChange(e.target.value)}
             >
               <MenuItem value={"..."}>-</MenuItem>
-              <MenuItem value={"north"}>North</MenuItem>
-              <MenuItem value={"south"}>South</MenuItem>
+              <MenuItem value={"north"}>Northern</MenuItem>
+              <MenuItem value={"south"}>Southern</MenuItem>
             </Select>
           </FormControl>
       </Box>
