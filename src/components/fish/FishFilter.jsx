@@ -53,7 +53,11 @@ const FishFilter = ({ onSearchChange, onHemisphereChange, onMonthChange, searchQ
           </FormControl>
       </Box>
       
-      <Button variant="contained" onClick={onRefresh}>Refresh</Button>
+        <Button 
+          variant="contained" 
+          onClick={onRefresh}>
+            Refresh
+        </Button>
     </div>
   );
 };

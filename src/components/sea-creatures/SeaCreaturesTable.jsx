@@ -7,7 +7,8 @@ const SeaCreaturesTable = () => {
   const [searchQuery, setSearchQuery] = useState("");
   const [hemisphere, setHemisphere] = useState("north");
   const [selectedMonth, setSelectedMonth] = useState("");
-
+  const [sortConfig, setSortConfig] = useState({ key: 'sellPrice', direction: 'asc' });
+  const [originalData, setOriginalData] = useState([...SeaCreaturesData]); 
   const handleSearchChange = (query) => {
     setSearchQuery(query);
   };
@@ -22,25 +23,48 @@ const SeaCreaturesTable = () => {
 
   const handleRefresh = () => {
     setSearchQuery("");
-    setHemisphere("All");
+    setHemisphere("...");
     setSelectedMonth("All");
+    setSortConfig({ key: 'sellPrice', direction: 'asc' });
+    setOriginalData([...SeaCreaturesData]);
   };
 
-  const filteredSeaCreatures = SeaCreaturesData.filter((SeaCreature) => {
+  const handleSort = (key) => {
+    let direction = 'asc';
+    if (sortConfig.key === key && sortConfig.direction === 'asc') {
+      direction = 'desc';
+    }
+    setSortConfig({ key, direction });
+  };
+
+  const filteredSeaCreatures = originalData.filter((SeaCreature) => {
     const nameMatches = SeaCreature.name.toLowerCase().includes(searchQuery.toLowerCase());
 
     let hemisphereMatches = true;
-    if (hemisphere !== "All") {
-      hemisphereMatches = SeaCreature[hemisphere].some((availability, index) => selectedMonth === "" || (availability && index === parseInt(selectedMonth)));
+    if (hemisphere !== "...") {
+      hemisphereMatches = Array.isArray(SeaCreature[hemisphere]) && SeaCreature[hemisphere].some((availability, index) => selectedMonth === "" || (availability && index === parseInt(selectedMonth)));
     }
 
     let monthMatches = true;
     if (selectedMonth !== "All") {
-      monthMatches = SeaCreature[hemisphere][parseInt(selectedMonth)] === 1;
+      monthMatches = Array.isArray(SeaCreature[hemisphere]) && SeaCreature[hemisphere][parseInt(selectedMonth)] === 1;
     }
 
     return nameMatches && hemisphereMatches && monthMatches;
   });
+
+  const sortedSeaCreature = filteredSeaCreatures.sort((a, b) => {
+    if (a[sortConfig.key] < b[sortConfig.key]) {
+      return sortConfig.direction === 'asc' ? -1 : 1;
+    }
+    if (a[sortConfig.key] > b[sortConfig.key]) {
+      return sortConfig.direction === 'asc' ? 1 : -1;
+    }
+    return 0;
+  });
+
+  const displayedSeaCreature = sortedSeaCreature.map((SeaCreature, index) => ({ ...SeaCreature, displayId: index + 1 }));
+
 
   return (
     <>
@@ -59,7 +83,9 @@ const SeaCreaturesTable = () => {
             <th>#</th>
             <th>Name</th>
             <th>Icon</th>
-            <th>Sell Price</th>
+            <th onClick={() => handleSort('sellPrice')} style={{ cursor: 'pointer' }}>
+              Sell Price {sortConfig.key === 'sellPrice' && (sortConfig.direction === 'asc' ? '▲' : '▼')}
+            </th>
             <th>Shadow Size</th>
             <th>Shadow Movement</th>
             <th>Time</th>
@@ -67,7 +93,7 @@ const SeaCreaturesTable = () => {
           </tr>
         </thead>
         <tbody>
-          {filteredSeaCreatures.map((SeaCreature, index) => (
+          {displayedSeaCreature.map((SeaCreature, index) => (
             <SeaCreaturesDetails key={index} data={SeaCreature} />
           ))}
         </tbody>

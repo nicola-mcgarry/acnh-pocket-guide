@@ -29,7 +29,7 @@ const BugsFilter = ({ onSearchChange, onHemisphereChange, onMonthChange, searchQ
               label="Hemisphere"
               onChange={(e) => onHemisphereChange(e.target.value)}
             >
-              <MenuItem value={"All"}>All</MenuItem>
+              <MenuItem value={"..."}>-</MenuItem>
               <MenuItem value={"north"}>North</MenuItem>
               <MenuItem value={"south"}>South</MenuItem>
             </Select>
