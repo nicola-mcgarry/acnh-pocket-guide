@@ -5,14 +5,14 @@ import './NavBar.css'
 
 const Navbar = () => {
   return (
-        <nav className="navbar ">
+        <nav className="navbar">
             <div className="container-fluid w-100 ps-5 pt-0 d-flex align-items-center">
                 <a className="navbar-brand" href="/">
                 <img src={Logo} alt="Logo" width="100" height="100" class="d-inline-block align-text-top"/>
                 </a>
                 <ul className="navbar-nav me-auto mb-2 mb-lg-0 d-flex">
                         <li className="nav-item">
-                            <Link className="nav-link pe-4" aria-current="page" to="/">Home</Link>
+                            <Link className="nav-link pe-4" to="/">Home</Link>
                         </li>
                         <li className="nav-item">
                             <Link className="nav-link pe-4" to="/bugs">Bugs</Link>

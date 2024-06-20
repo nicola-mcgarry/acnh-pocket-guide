@@ -7,12 +7,24 @@
   font-family: "Coustard-Regular";
   src: url("../public/assets/fonts/Coustard-Regular.ttf") format("ttf")
 }
-body {
-  background-color: #f8f4e8;
-  overflow-x: hidden;
+
+.container {
+  height: scroll;
+  background-color: #fffffa;
 }
 
 h1 {
   font-family: "FinkHeavy", "Coustard";
+}
+
+.MuiButtonBase-root {
+  height: 45px;
+  background-color: #81f1f7 !important;
+  font-family: "FinkHeavy", "Coustard" !important;
+  color: black !important; 
+}
+
+.MuiFormLabel-root {
+  height: 45px;
 }
 

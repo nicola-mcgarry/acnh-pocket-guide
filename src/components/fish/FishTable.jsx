@@ -7,7 +7,8 @@ const FishTable = () => {
   const [searchQuery, setSearchQuery] = useState("");
   const [hemisphere, setHemisphere] = useState("north");
   const [selectedMonth, setSelectedMonth] = useState("");
-
+  const [sortConfig, setSortConfig] = useState({ key: 'sellPrice', direction: 'asc' });
+  const [originalData, setOriginalData] = useState([...FishData]); 
   const handleSearchChange = (query) => {
     setSearchQuery(query);
   };
@@ -22,25 +23,47 @@ const FishTable = () => {
 
   const handleRefresh = () => {
     setSearchQuery("");
-    setHemisphere("All");
+    setHemisphere("...");
     setSelectedMonth("All");
+    setSortConfig({ key: 'sellPrice', direction: 'asc' });
+    setOriginalData([...FishData]);
   };
 
-  const filteredFish = FishData.filter((fish) => {
+  const handleSort = (key) => {
+    let direction = 'asc';
+    if (sortConfig.key === key && sortConfig.direction === 'asc') {
+      direction = 'desc';
+    }
+    setSortConfig({ key, direction });
+  };
+
+  const filteredFish = originalData.filter((fish) => {
     const nameMatches = fish.name.toLowerCase().includes(searchQuery.toLowerCase());
 
     let hemisphereMatches = true;
-    if (hemisphere !== "All") {
-      hemisphereMatches = fish[hemisphere].some((availability, index) => selectedMonth === "" || (availability && index === parseInt(selectedMonth)));
+    if (hemisphere !== "...") {
+      hemisphereMatches = Array.isArray(fish[hemisphere]) && fish[hemisphere].some((availability, index) => selectedMonth === "" || (availability && index === parseInt(selectedMonth)));
     }
 
     let monthMatches = true;
     if (selectedMonth !== "All") {
-      monthMatches = fish[hemisphere][parseInt(selectedMonth)] === 1;
+      monthMatches = Array.isArray(fish[hemisphere]) && fish[hemisphere][parseInt(selectedMonth)] === 1;
     }
 
     return nameMatches && hemisphereMatches && monthMatches;
   });
+
+  const sortedFish = filteredFish.sort((a, b) => {
+    if (a[sortConfig.key] < b[sortConfig.key]) {
+      return sortConfig.direction === 'asc' ? -1 : 1;
+    }
+    if (a[sortConfig.key] > b[sortConfig.key]) {
+      return sortConfig.direction === 'asc' ? 1 : -1;
+    }
+    return 0;
+  });
+
+  const displayedFish = sortedFish.map((fish, index) => ({ ...fish, displayId: index + 1 }));
 
   return (
     <>
@@ -56,19 +79,20 @@ const FishTable = () => {
       <table className="table text-center" style={{ width: '100%', borderCollapse: 'collapse' }}>
         <thead>
           <tr>
-            <th>#</th>
+            <th>#</th>             
             <th>Name</th>
-            <th>Icon</th>
-            <th>Sell Price</th>
+            <th>Icon</th>          
+            <th onClick={() => handleSort('sellPrice')} style={{ cursor: 'pointer' }}>
+              Sell Price {sortConfig.key === 'sellPrice' && (sortConfig.direction === 'asc' ? '▲' : '▼')}
+            </th>
             <th>Shadow Size</th>
             <th>Location</th>
-            <th>Weather</th>
             <th>Time</th>
             <th>Months</th>
           </tr>
         </thead>
         <tbody>
-          {filteredFish.map((fish, index) => (
+          {displayedFish.map((fish, index) => (
             <FishDetails key={index} data={fish} />
           ))}
         </tbody>
