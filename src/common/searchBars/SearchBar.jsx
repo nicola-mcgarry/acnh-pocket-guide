@@ -8,10 +8,11 @@ const SearchBar = ({onSearchChange, searchQuery, placeholder}) => {
 return (
     <TextField
         type="text"
+        className="searchBar"
         placeholder={placeholder}
         value={searchQuery}
         onChange={(e) => onSearchChange(e.target.value)}
-        style={{ marginBottom: '10px' }}
+        style={{ marginBottom: '10px'}}
     />
   );
 };

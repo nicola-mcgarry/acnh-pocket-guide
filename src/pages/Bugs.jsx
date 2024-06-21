@@ -6,12 +6,14 @@ import SearchBar from '../common/searchBars/SearchBar';
 import Select from '../common/selects/Select';
 import RefreshBtn from '../common/buttons/RefreshBtn';
 
+
 const Bugs = () => {
   const [searchQuery, setSearchQuery] = useState("");
   const [hemisphere, setHemisphere] = useState("...");
   const [selectedMonth, setSelectedMonth] = useState("All");
   const [sortConfig, setSortConfig] = useState({ key: 'sellPrice', direction: 'asc' });
   const [filteredBugs, setFilteredBugs] = useState([...BugsData]); 
+  const [view, setView] = useState('table');
   
   useEffect(() => {
     applyFilters();
@@ -76,6 +78,12 @@ const Bugs = () => {
     setFilteredBugs(displayedBugs);
   };
 
+  const handleViewChange = (event, nextView) => {
+    if (nextView !== null) {
+      setView(nextView);
+    }
+  };
+
   return (
     <div className='container ps-5 pe-5' style={{height: '92vh'}}>
         <div className='col d-flex flex-row pb-3 pt-5 justify-content-between'>
@@ -101,8 +109,8 @@ const Bugs = () => {
                 </div>                     
             </div>          
         </div>  
-      <BugsTable data={filteredBugs} onSort={handleSort} sortConfig={sortConfig} />
-      </div>
+            <BugsTable data={filteredBugs} onSort={handleSort} sortConfig={sortConfig} />
+   </div>
   );
 };
 

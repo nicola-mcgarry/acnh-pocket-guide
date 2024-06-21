@@ -12,9 +12,6 @@ const Navbar = () => {
                 </a>
                 <ul className="navbar-nav me-auto mb-2 mb-lg-0 d-flex">
                         <li className="nav-item">
-                            <Link className="nav-link pe-4" to="/">Home</Link>
-                        </li>
-                        <li className="nav-item">
                             <Link className="nav-link pe-4" to="/bugs">Bugs</Link>
                         </li>
                         <li className="nav-item">
@@ -24,7 +21,7 @@ const Navbar = () => {
                             <Link className="nav-link pe-4 " to="/sea-creatures">Sea Creatures</Link>
                         </li>
                         <li className="nav-item">
-                            <Link className="nav-link pe-4 disabled" aria-disabled="true" to="/fossils">Fossils</Link>
+                            <Link className="nav-link pe-4 " to="/fossils">Fossils</Link>
                         </li>
                     
                     </ul>

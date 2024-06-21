@@ -21,10 +21,22 @@ h1 {
   height: 45px;
   background-color: #81f1f7 !important;
   font-family: "FinkHeavy", "Coustard" !important;
-  color: black !important; 
+  color: white !important; 
+  border-radius: 40px !important;
+}
+
+.MuiOutlinedInput-root{
+  border-radius: 40px !important;
 }
 
 .MuiFormLabel-root {
   height: 45px;
 }
 
+.sellPriceTable {
+  width:150px;
+}
+
+.MuiTableContainer-root, .MuiPaper-root{
+  border-radius: 40px!important;
+}
