@@ -34,8 +34,8 @@ const FishTable = ({data, onSort, sortConfig}) => {
               Sell Price
             </TableSortLabel>
           </TableCell>
+          <TableCell>Shadow Size</TableCell>
           <TableCell >Location</TableCell>
-          <TableCell>Weather</TableCell>
           <TableCell>Time</TableCell>
           <TableCell>Months</TableCell>
         </TableRow>
@@ -47,8 +47,8 @@ const FishTable = ({data, onSort, sortConfig}) => {
             <TableCell>{Fish.name}</TableCell>
             <TableCell ><img src={Fish.icon} alt={Fish.name} style={{ width:50, height: 50 }} /></TableCell>
             <TableCell><img src={Bells} alt="Bells" style={{width: 50}}/>{Fish.sellPrice} Bells</TableCell>
+            <TableCell><img src={Fish.shadowSize}/></TableCell>
             <TableCell>{Fish.location}</TableCell>
-            <TableCell>{Fish.weather}</TableCell>
             <TableCell>{Fish.time}</TableCell>
             <TableCell>
             <table style={{ width: '100%', borderCollapse: 'collapse' }}>

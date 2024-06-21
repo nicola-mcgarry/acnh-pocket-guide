@@ -36,6 +36,10 @@ h1 {
 .sellPriceTable {
   width:150px;
 }
+.MuiButtonBase-root.sellPriceTable {
+  background-color: aquamarine !important;
+
+}
 
 .MuiTableContainer-root, .MuiPaper-root{
   border-radius: 40px!important;
