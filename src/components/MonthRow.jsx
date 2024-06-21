@@ -10,9 +10,9 @@ const MonthRow = ({ label, values }) => {
 
     return (
         <tr>
-        <td style={{ paddingRight: '10px', fontWeight: 'bold' }}>{label}</td>
+        <td style={{ paddingRight: '10px', fontWeight: '500' }}>{label}</td>
         {values.map((value, index) => (
-          <td key={index} style={{ color: value ? 'green' : 'lightgray' }}>
+          <td key={index} style={{ color: value ? '#81f1f7' : 'lightgray', fontWeight:'700' }}>
             {months[index]}
           </td>
         ))}

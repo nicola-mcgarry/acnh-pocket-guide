@@ -85,9 +85,9 @@ const Bugs = () => {
   };
 
   return (
-    <div className='container ps-5 pe-5' style={{height: '92vh'}}>
-        <div className='col d-flex flex-row pb-3 pt-5 justify-content-between'>
-          <h1 className='pe-5 '>Bugs</h1>
+    <div className='container-fluid ps-5 pe-5' style={{height: '92vh'}}>
+        <div className='col d-flex flex-row pb-5 pt-5 justify-content-between'>
+          <h1 className='pe-5 ps-5'>Bugs</h1>
             <div className='d-flex'>
                 <SearchBar 
                 onSearchChange={handleSearchChange}

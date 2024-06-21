@@ -1,6 +1,4 @@
 import React, { useState } from 'react';
-import BugDetails from './BugDetails';
-import BugData from '../../data/BugData.json';
 
 const BugsCard = () => {
     

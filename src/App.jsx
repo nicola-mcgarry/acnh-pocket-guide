@@ -11,7 +11,7 @@ function App() {
 
   return (
     <Router>
-    <div>
+    <div className='d-flex'>
       <Navbar />
       <Routes>
         <Route path="/" element={<Home />} />

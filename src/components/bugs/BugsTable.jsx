@@ -16,7 +16,7 @@ const BugsTable = ({data, onSort, sortConfig}) => {
     return (        
       <TableContainer component={Paper}>
       <Table aria-label="bugs table">
-        <TableHead className='text-center'>
+        <TableHead className='text-center' stickyHeader>
           <TableRow>
             <TableCell>#</TableCell>
             <TableCell>Name</TableCell>
@@ -45,7 +45,7 @@ const BugsTable = ({data, onSort, sortConfig}) => {
           {data.map((bug, index) => (
             <TableRow key={bug.id}>
               <TableCell>{index + 1}</TableCell>
-              <TableCell>{bug.name}</TableCell>
+              <TableCell className='sticklyColumn'>{bug.name}</TableCell>
               <TableCell ><img src={bug.icon} alt={bug.name} style={{ width:50, height: 50 }} /></TableCell>
               <TableCell><img src={Bells} alt="Bells" style={{width: 50}}/>{bug.sellPrice} Bells</TableCell>
               <TableCell>{bug.location}</TableCell>
