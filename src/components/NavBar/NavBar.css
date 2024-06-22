@@ -1,25 +1,36 @@
 
 .navbar {
-    background-color: lightgreen;
-    height: 100vh;
-    width: 275px;
+    height: 101vh;
+    width: 300px;
     font-size: 25px;
     font-family: "FinkHeavy", "Coustard";
     margin-left:-12px;
     margin-top: -10px;
-    
+    background: linear-gradient(135deg,#e3dfb5 75%,#f8f4c7);  
+   
 }
 
 .navbar-img {
     margin-top: -200px;
 }
 
+.narbar-imgText {
+    font-size:20px;
+}
+
 .navbar-nav {
     margin-top: -480px;
 }
 
-Link:active{
- color: #e1923f !important;
+.nav-link {
+    background: linear-gradient(90deg,#f8f4c7,#e3dfb5);  
+    border-radius: 40px;
+
+}
+.nav-link:focus, .nav-link:hover {
+    background: linear-gradient(10deg,#f8f4c7,#e3dfb5);  
+    border-radius: 40px;
+
 }
 
 .d-flex {
@@ -27,3 +38,9 @@ Link:active{
 }
 
 
+.MuiDivider-root{
+    border-color: gray !important;
+    margin-left:-25px !important;
+
+
+}

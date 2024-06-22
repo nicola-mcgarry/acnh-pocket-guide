@@ -18,7 +18,7 @@ h1 {
 
 .MuiButtonBase-root {
   height: 45px;
-  background-color: lightblue !important;
+  background-color: #0cc6b8 !important;
   font-family: "FinkHeavy", "Coustard" !important;
   color: white !important; 
   border-radius: 40px !important;
@@ -26,8 +26,7 @@ h1 {
 
 .MuiOutlinedInput-root{
   border-radius: 40px !important;
-  background-color: white;
-  border: 1px solid lightyellow;
+  background-color: #e3dfb5;
 }
 
 .MuiFormLabel-root {
@@ -37,16 +36,14 @@ h1 {
 .sellPriceTable {
   width:150px;
 }
-.MuiButtonBase-root.sellPriceTable {
-}
 
 .MuiSvgIcon-root {
-  color: white !important;
+  color: white !important;  
 }
 
 .MuiTableContainer-root {
   max-height: 740px;
-  scrollbar-color: pink white;
+  scrollbar-color: #e3dfb5 #f8f4c7;
   scrollbar-width: thin;
   
 }
@@ -54,10 +51,18 @@ h1 {
 .MuiTableHead-root {
   position: sticky;
   top: 0;
-  background-color: pink;
+  background-color: #0cc6b8;
   z-index: 1;
-  border-bottom: 1px solid gray !important;
 
+}
+
+.MuiTableBody-root {
+  border-color: #fdc0c7;
+}
+
+.MuiMenuItem-root {
+  color:#0cc6b8 !important;
+  background-color: white !important;
 }
 
 .MuiTableCell-root {
@@ -67,4 +72,16 @@ h1 {
 .MuiTableContainer-root, .MuiPaper-root{
   border-radius: 40px!important;
   
+}
+
+.MuiSelect-select, .MuiOutlinedInput-root {
+  border: 1px solid #e3dfb5;
+}
+
+.MuiSelect-select:active, .MuiOutlinedInput-root:active {
+  border: 1px solid #0cc6b8 !important;
+}
+
+.MuiSvgIcon-root {
+  color: #f8f4c7 !important;
 }
