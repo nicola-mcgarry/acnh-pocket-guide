@@ -1,0 +1,317 @@
+[
+    {
+        "id": 1,
+        "name": "Acanthostega",
+        "gallery": "assets/fossils/museum/Acanthostega.png",
+        "scientificName": "Acanthostega gunnari",
+        "parts": 1,
+        "length": "70cm",
+        "period": "Late Devonian"
+      },
+      {
+        "id": 2,
+        "name": "Amber",
+        "gallery": "assets/fossils/museum/Amber.png",
+        "scientificName": "Amber",
+        "parts": 1,
+        "length": "",
+        "period": ""
+      },
+      {
+        "id": 3,
+        "name": "Ammonite",
+        "gallery": "assets/fossils/museum/Ammonite.png",
+        "scientificName": "Arietites bucklandi",
+        "parts": 1,
+        "length": "",
+        "period": ""
+      },
+      {
+        "id": 4,
+        "name": "Ankylosaurus",
+        "gallery": "assets/fossils/museum/Ankylosaurus.png",
+        "scientificName": "Ankylosaurus magniventris",
+        "parts": 3,
+        "length": "31.6",
+        "period": "Late Cretaceous"
+      },
+      {
+        "id": 5,
+        "name": "Anomalocaris",
+        "gallery": "assets/fossils/museum/Anomalocaris.png",
+        "scientificName": "Anomalocaris",
+        "parts": 1,
+        "length": "",
+        "period": ""
+      },
+      {
+        "id": 6,
+        "name": "Archaeopteryx",
+        "gallery": "assets/fossils/museum/Archaeopteryx.jpg",
+        "scientificName": "Archaeopteryx lithographica",
+        "parts": 1,
+        "length": "",
+        "period": ""
+      },
+      {
+        "id": 7,
+        "name": "Archelon",
+        "gallery": "assets/fossils/museum/Archelon.png",
+        "scientificName": "Archelon ischyros",
+        "parts": 2,
+        "length": "13",
+        "period": "Late Cretaceous"
+      },
+      {
+        "id": 8,
+        "name": "Australopith",
+        "gallery": "assets/fossils/museum/Australopith.png",
+        "scientificName": "Australopithecus",
+        "parts": 1,
+        "length": "",
+        "period": ""
+      },
+      {
+        "id": 9,
+        "name": "Brachiosaurus",
+        "gallery": "assets/fossils/museum/Brachiosaurus.png",
+        "scientificName": "Brachiosaurus altithorax",
+        "parts": 4,
+        "length": "68",
+        "period": "Late Jurassic"
+      },
+      {
+        "id": 10,
+        "name": "Coprolite",
+        "gallery": "assets/fossils/museum/Coprolite.png",
+        "scientificName": "Unknown",
+        "parts": 1,
+        "length": "",
+        "period": ""
+      },
+      {
+        "id": 11,
+        "name": "Deinonychus",
+        "gallery": "assets/fossils/museum/Deinony.png",
+        "scientificName": "Deinonychus antirrhopus",
+        "parts": 2,
+        "length": "11",
+        "period": "Cretaceous"
+      },
+      {
+        "id": 12,
+        "name": "Dimetrodon",
+        "gallery": "assets/fossils/museum/Dimetrodon.png",
+        "scientificName": "Dimetrodon grandis",
+        "parts": 2,
+        "length": "11.5",
+        "period": "Early Permian"
+      },
+      {
+        "id": 13,
+        "name": "Dinosaur track",
+        "gallery": "assets/fossils/museum/DinosaurTrack.png",
+        "scientificName": "Unknown",
+        "parts": 1,
+        "length": "",
+        "period": ""
+      },
+      {
+        "id": 14,
+        "name": "Diplodocus",
+        "gallery": "assets/fossils/museum/Diplodocus.png",
+        "scientificName": "Diplodocus longus",
+        "parts": 6,
+        "length": "",
+        "period": "Late Jurassic"
+      },
+      {
+        "id": 15,
+        "name": "Dunkleosteus",
+        "gallery": "assets/fossils/museum/Dunkleosteus.png",
+        "scientificName": "Dunkleosteus",
+        "parts": 1,
+        "length": "",
+        "period": "Frasnian - Famennian"
+      },
+      {
+        "id": 16,
+        "name": "Eusthenopteron",
+        "gallery": "assets/fossils/museum/Eusthenopteron.png",
+        "scientificName": "Eusthenopteron",
+        "parts": 1,
+        "length": "",
+        "period": "Late Devonian"
+      },
+      {
+        "id": 17,
+        "name": "Iguanodon",
+        "gallery": "assets/fossils/museum/Iguanodon.png",
+        "scientificName": "Iguanodon bernissartensis",
+        "parts": 3,
+        "length": "32.8",
+        "period": "Early Cretaceous"
+      },
+      {
+        "id": 18,
+        "name": "Juramaia",
+        "gallery": "assets/fossils/museum/Juramaia.png",
+        "scientificName": "Juramaia sinensis",
+        "parts": 1,
+        "length": "0.25",
+        "period": "Late Jurassic"
+      },
+      {
+        "id": 19,
+        "name": "Mammoth",
+        "gallery": "assets/fossils/museum/Mammoth.png",
+        "scientificName": "Mammuthus primigenius",
+        "parts": 2,
+        "length": "13",
+        "period": "Pleistocene Cenozoic, Quaternary"
+      },
+      {
+        "id": 20,
+        "name": "Megacerops",
+        "gallery": "assets/fossils/museum/Megacerops.png",
+        "scientificName": "Megacerops",
+        "parts": 3,
+        "length": "16",
+        "period": "Late Eocene"
+      },
+      {
+        "id": 21,
+        "name": "Megaloceros",
+        "gallery": "assets/fossils/museum/Megaloceros.png",
+        "scientificName": "Megaloceros giganteus",
+        "parts": 2,
+        "length": "",
+        "period": "Pleistocene"
+      },
+      {
+        "id": 22,
+        "name": "Myllokunmingia",
+        "gallery": "assets/fossils/museum/Myllokunmingia.png",
+        "scientificName": "Myllokunmingia fengjiaoa",
+        "parts": 1,
+        "length": "0.0917",
+        "period": "Cambrian"
+      },
+      {
+        "id": 23,
+        "name": "Ophthalmosaurus",
+        "gallery": "assets/fossils/museum/OphthalmosaurusLit.png",
+        "scientificName": "Ophthalmosaurus icenicus",
+        "parts": 2,
+        "length": "",
+        "period": "Middle Jurassic"
+      },
+      {
+        "id": 24,
+        "name": "Pachycephalosaurus",
+        "gallery": "assets/fossils/museum/Pachycephalosaurus.png",
+        "scientificName": "Pachycephalosaurus wyomingensis",
+        "parts": 2,
+        "length": "13.1",
+        "period": "Late Cretaceous"
+      },
+      {
+        "id": 25,
+        "name": "Parasaurolophus",
+        "gallery": "assets/fossils/museum/Parasaurolophus.png",
+        "scientificName": "Parasaurolophus walkeri",
+        "parts": 3,
+        "length": "29.5",
+        "period": "Late Cretaceous"
+      },
+      {
+        "id": 26,
+        "name": "Plesiosaurus",
+        "gallery": "assets/fossils/museum/Plesiosaur.png",
+        "scientificName": "Futabasaurus suzukii",
+        "parts": 3,
+        "length": "23.6",
+        "period": "Late Cretaceous"
+      },
+      {
+        "id": 27,
+        "name": "Pteranodon",
+        "gallery": "assets/fossils/museum/Pteranodon.png",
+        "scientificName": "Pteranodon longiceps",
+        "parts": 3,
+        "length": "30.2",
+        "period": "Late Cretaceous"
+      },
+      {
+        "id": 28,
+        "name": "Quetzalcoatlus",
+        "gallery": "assets/fossils/museum/Quetzalcoatlus.png",
+        "scientificName": "Quetzalcoatlus northropi",
+        "parts": 3,
+        "length": "",
+        "period": ""
+      },
+      {
+        "id": 29,
+        "name": "Sabertooth Tiger",
+        "gallery": "assets/fossils/museum/SabertoothTiger.png",
+        "scientificName": "Smilodon fatalis",
+        "parts": 2,
+        "length": "",
+        "period": "Pleistocene Cenzoic, Quaternary"
+      },
+      {
+        "id": 30,
+        "name": "Shark-tooth pattern",
+        "gallery": "assets/fossils/museum/SharkTooth.png",
+        "scientificName": "Heliocoprion",
+        "parts": 1,
+        "length": "",
+        "period": ""
+      },
+      {
+        "id": 31,
+        "name": "Spinosaurus",
+        "gallery": "assets/fossils/museum/Spinosaurus.png",
+        "scientificName": "Spinosaurus aegyptiacus",
+        "parts": 3,
+        "length": "",
+        "period": ""
+      },
+      {
+        "id": 32,
+        "name": "Stegosaurus",
+        "gallery": "assets/fossils/museum/Stegosaur.png",
+        "scientificName": "Stegosaurus armatus",
+        "parts": 3,
+        "length": "30.5",
+        "period": "Late Cretaceous"
+      },
+      {
+        "id": 33,
+        "name": "T. Rex",
+        "gallery": "assets/fossils/museum/TRex.jpg",
+        "scientificName": "Tyrannosaurus rex",
+        "parts": 3,
+        "length": "47.6",
+        "period": "Late Cretaceous"
+      },
+      {
+        "id": 34,
+        "name": "Triceratops",
+        "gallery": "assets/fossils/museum/Triceratops.jpg",
+        "scientificName": "Triceratops horridus",
+        "parts": 3,
+        "length": "31.2",
+        "period": "Late Cretaceous"
+      },
+      {
+        "id": 35,
+        "name": "Trilobite",
+        "gallery": "assets/fossils/museum/Trilobite.jpg",
+        "scientificName": "Cheirurus",
+        "parts": 1,
+        "length": "",
+        "period": ""
+      }
+]

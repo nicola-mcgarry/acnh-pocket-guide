@@ -1,9 +1,11 @@
 import React, { useState, useEffect } from 'react';
 import FishData from '../data/FishData.json';
 import FishTable from '../components/fish/FishTable';
+import FishCard from '../components/fish/FishCard';
 import SearchBar from '../common/searchBars/SearchBar';
 import Select from '../common/selects/Select';
 import RefreshBtn from '../common/buttons/RefreshBtn';
+import {Button } from '@mui/material';
 
 const Fish = () => {
   const [searchQuery, setSearchQuery] = useState("");
@@ -11,7 +13,8 @@ const Fish = () => {
   const [selectedMonth, setSelectedMonth] = useState("All");
   const [sortConfig, setSortConfig] = useState({ key: 'sellPrice', direction: 'asc' });
   const [filteredFish, setFilteredFish] = useState([...FishData]); 
-  
+  const [view, setView] = useState('table');
+
   useEffect(() => {
     applyFilters();
   }, [searchQuery, hemisphere, selectedMonth, sortConfig]);
@@ -81,6 +84,8 @@ const Fish = () => {
         <div className='col d-flex flex-row pb-5 pt-5 justify-content-between'>
           <h1 className='pe-5 ps-5'>Fish</h1>
             <div className='d-flex'>
+                <Button className="me-3 mt-2" style={{width:'20%'}} onClick={() => setView('table')}>Table View</Button>
+                <Button className="me-3 mt-2" style={{width:'20%'}} onClick={() => setView('card')}>Card View</Button>
                 <SearchBar 
                 onSearchChange={handleSearchChange}
                 searchQuery={searchQuery}
@@ -101,8 +106,8 @@ const Fish = () => {
                 </div>                     
             </div>          
         </div>  
-        <FishTable data={filteredFish} onSort={handleSort} sortConfig={sortConfig}/>
-      </div>
+        {view === 'table' ? <FishTable data={filteredFish} onSort={handleSort} sortConfig={sortConfig}/> : <FishCard data={filteredFish} onSort={handleSort} sortConfig={sortConfig} />}
+        </div>
     );
   };
 

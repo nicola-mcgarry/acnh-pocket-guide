@@ -1,12 +1,53 @@
-import React, { useState } from 'react';
+import React from 'react';
+import { Card, CardContent, Typography, Grid, Paper, TableSortLabel, Divider } from '@mui/material';
+import MonthRow from '../MonthRow';
+import Bells from '../../../public/assets/Bells.png';
 
-const BugsCard = () => {
-    
-    return (        
-      <>
-          <h1>Card </h1>
-        
-     </>           
+const BugsCard = ({data, onSort, sortConfig }) => {
+  
+  return (
+    <div style={{ padding: '16px', marginTop: '-40px' }}>
+      <div className="d-flex mb-3 float-end" >
+        <TableSortLabel
+          active={sortConfig.key === 'sellPrice'}
+          direction={sortConfig.direction}
+          onClick={() => onSort('sellPrice')}
+          className='ps-3'
+         
+        >
+          Sell Price
+        </TableSortLabel>
+      </div>
+      <Grid container spacing={2}>
+        {data.map((bug) => (
+          <Grid item xs={12} sm={6} md={4} lg={3} key={bug.id}>
+            <Card style={{ display: 'flex', flexDirection: 'column', marginBottom: 10 }}>
+              <div className='d-flex' style={{backgroundColor: '#0cc6b8', }}>
+                <img src={bug.icon} alt={bug.name} style={{ width: 50, height: 50}} />
+                <Typography style={{fontWeight: 700}} className='ps-2 pt-3'>{bug.name}</Typography>
+              </div> 
+              <div className='mx-auto pt-3 d-flex align-items-center' style={{height: 350}}>
+              <img src={bug.gallery} alt={bug.name} className='object-fit-contain' />       
+
+              </div>  
+              <Divider className='pb-3' style={{Color: '#0cc6b8'}}/>
+              <CardContent className='d-flex flex-column mb-3'>            
+                  <Typography >Location: {bug.location}</Typography>
+                  <Typography >Weather: {bug.weather}</Typography>
+                  <Typography >Time: {bug.time}</Typography>
+                  <table style={{ width: '100%', borderCollapse: 'collapse' }}>
+                    <tbody>
+                      {bug.north && <MonthRow label="North:" values={bug.north} />}
+                      {bug.south && <MonthRow label="South:" values={bug.south} />}
+                    </tbody>
+                  </table>      
+                  <Typography ><img src={Bells} alt="Bells" style={{width: 50}}/>{bug.sellPrice} Bells</Typography>      
+              </CardContent>
+            </Card>
+          </Grid>
+        ))}
+      </Grid>
+    </div>
   );
 };
 

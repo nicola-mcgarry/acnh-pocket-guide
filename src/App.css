@@ -8,37 +8,48 @@
   src: url("../public/assets/fonts/Coustard-Regular.ttf") format("ttf")
 }
 
-.container {
-  height: scroll;
+body {
+  font-family: "FinkHeavy", "Coustard" !important;
+  color: #23262a !important;
+
+}
+
+.container-fluid{
+  height: 100vh;
+  position: sticky;
 }
 
 h1 {
-  font-family: "FinkHeavy", "Coustard";
+  color: #08100c !important;
 }
 
 .MuiButtonBase-root {
   height: 45px;
   background-color: #0cc6b8 !important;
   font-family: "FinkHeavy", "Coustard" !important;
-  color: white !important; 
+  color: #f4f7f4 !important; 
   border-radius: 40px !important;
 }
 
 .MuiOutlinedInput-root{
   border-radius: 40px !important;
-  background-color: #e3dfb5;
+  background-color: #f4f7f4;
+  color: #23262a !important;
+
 }
 
 .MuiFormLabel-root {
   height: 45px;
+  color: #23262a !important;
+
 }
 
 .sellPriceTable {
-  width:150px;
+  width:200px;
 }
 
 .MuiSvgIcon-root {
-  color: white !important;  
+  color: f4f7f4 !important;  
 }
 
 .MuiTableContainer-root {
@@ -62,15 +73,15 @@ h1 {
 
 .MuiMenuItem-root {
   color:#0cc6b8 !important;
-  background-color: white !important;
+  background-color: #f4f7f4 !important;
 }
 
 .MuiTableCell-root {
-  font-weight: 70 !important;
+  font-weight: 400 !important;
 }
 
 .MuiTableContainer-root, .MuiPaper-root{
-  border-radius: 40px!important;
+  border-radius: 14px!important;
   
 }
 
@@ -84,4 +95,20 @@ h1 {
 
 .MuiSvgIcon-root {
   color: #f8f4c7 !important;
+}
+
+
+.MuiTableCell-root{
+  background-color: 1px solid #f4f7f4 !important;
+  font-size: 16px !important;
+  font-family: "FinkHeavy", "Coustard" !important;
+
+}
+
+.MuiTableBody-root {
+  background-color: #f4f7f4 !important;
+}
+
+.MuiPaper-root {
+  background-color: #08100c;
 }

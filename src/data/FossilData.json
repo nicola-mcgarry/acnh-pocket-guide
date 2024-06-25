@@ -1,0 +1,659 @@
+[
+    {
+        "id": 1,
+        "name": "Acanthostega",
+        "icon": "assets/fossils/Acanthostega.png",
+        "sellPrice": 2000,
+        "colorOne": "#e9dfaf",
+        "colorTwo": "#e6ccb3",
+        "size": "assets/fossils/size/1x1.png"
+      },
+      {
+        "id": 2,
+        "name": "Amber",
+        "icon": "assets/fossils/Amber.png",
+        "sellPrice": 1200,
+        "colorOne": "#ffe19b",
+        "colorTwo": "",
+        "size": "assets/fossils/size/1x1.png"
+      },
+      {
+        "id": 3,
+        "name": "Ammonite",
+        "icon": "assets/fossils/Ammonite.png",
+        "sellPrice": 1100,
+        "colorOne": "#e9dfaf",
+        "colorTwo": "#e6ccb3",
+        "size": "assets/fossils/size/1x1.png"
+      },
+      {
+        "id": 4,
+        "name": "Ankylo Skull",
+        "icon": "assets/fossils/AnkyloSkull.png",
+        "sellPrice": 3500,
+        "colorOne": "#e9dfaf",
+        "colorTwo": "#e6ccb3",
+        "size": "assets/fossils/size/1x1.png"
+      },
+      {
+        "id": 5,
+        "name": "Ankylo Torso",
+        "icon": "assets/fossils/AnkyloTorso.png",
+        "sellPrice": 3000,
+        "colorOne": "#e9dfaf",
+        "colorTwo": "#e6ccb3",
+        "size": "assets/fossils/size/1x1.png"
+      },
+      {
+        "id": 6,
+        "name": "Ankylo Tail",
+        "icon": "assets/fossils/AnkyloTail.png",
+        "sellPrice": 2500,
+        "colorOne": "#e9dfaf",
+        "colorTwo": "#e6ccb3",
+        "size": "assets/fossils/size/1x1.png"
+      },
+      {
+        "id": 7,
+        "name": "Anomalocaris",
+        "icon": "assets/fossils/Anomalocaris.png",
+        "sellPrice": 2000,
+        "colorOne": "#b3b3b3",
+        "colorTwo": "#ccc",
+        "size": "assets/fossils/size/1x1.png"
+      },
+      {
+        "id": 8,
+        "name": "Archaeopteryx",
+        "icon": "assets/fossils/Archaeopteryx.png",
+        "sellPrice": 1300,
+        "colorOne": "#e9dfaf",
+        "colorTwo": "#e6ccb3",
+        "size": "assets/fossils/size/1x1.png"
+      },
+      {
+        "id": 9,
+        "name": "Archelon skull",
+        "icon": "assets/fossils/ArchelonSkull.png",
+        "sellPrice": 4000,
+        "colorOne": "#e9dfaf",
+        "colorTwo": "#e6ccb4",
+        "size": "assets/fossils/size/1x1.png"
+      },
+      {
+        "id": 10,
+        "name": "Archelon tail",
+        "icon": "assets/fossils/ArchelonTail.png",
+        "sellPrice": 3500,
+        "colorOne": "#e9dfaf",
+        "colorTwo": "#e6ccb5",
+        "size": "assets/fossils/size/2x2.png"
+      },
+      {
+        "id": 11,
+        "name": "Australopith",
+        "icon": "assets/fossils/Australopith.png",
+        "sellPrice": 1100,
+        "colorOne": "#e9dfaf",
+        "colorTwo": "#e6ccb6",
+        "size": "assets/fossils/size/1x1.png"
+      },
+      {
+        "id": 12,
+        "name": "Brachio skull",
+        "icon": "assets/fossils/BrachioSkull.png",
+        "sellPrice": 6000,
+        "colorOne": "#e9dfaf",
+        "colorTwo": "#e6ccb7",
+        "size": "assets/fossils/size/2x2.png"
+      },
+      {
+        "id": 13,
+        "name": "Brachio chest",
+        "icon": "assets/fossils/BrachioChest.png",
+        "sellPrice": 5500,
+        "colorOne": "#e9dfaf",
+        "colorTwo": "#e6ccb8",
+        "size": "assets/fossils/size/2x2.png"
+      },
+      {
+        "id": 14,
+        "name": "Brachio pelvis",
+        "icon": "assets/fossils/BrachioPelvis.png",
+        "sellPrice": 5000,
+        "colorOne": "#e9dfaf",
+        "colorTwo": "#e6ccb9",
+        "size": "assets/fossils/size/2x2.png"
+      },
+      {
+        "id": 15,
+        "name": "Brachio tail",
+        "icon": "assets/fossils/BrachioTail.png",
+        "sellPrice": 5500,
+        "colorOne": "#e9dfaf",
+        "colorTwo": "#e6ccb10",
+        "size": "assets/fossils/size/2x2.png"
+      },
+      {
+        "id": 16,
+        "name": "Coprolite",
+        "icon": "assets/fossils/Coprolite.png",
+        "sellPrice": 1100,
+        "colorOne": "#e6ccb10",
+        "colorTwo": "",
+        "size": "assets/fossils/size/1x1.png"
+      },
+      {
+        "id": 17,
+        "name": "Deinony torso",
+        "icon": "assets/fossils/DeinonyTorso.png",
+        "sellPrice": 3000,
+        "colorOne": "#e6ccb11",
+        "colorTwo": "",
+        "size": "assets/fossils/size/2x2.png"
+      },
+      {
+        "id": 18,
+        "name": "Deinony tail",
+        "icon": "assets/fossils/DeinonyTail.png",
+        "sellPrice": 2500,
+        "colorOne": "#e6ccb12",
+        "colorTwo": "",
+        "size": "assets/fossils/size/2x2.png"
+      },
+      {
+        "id": 19,
+        "name": "Dimetrodon skull",
+        "icon": "assets/fossils/DimetrodonSkull.png",
+        "sellPrice": 5500,
+        "colorOne": "#e6ccb13",
+        "colorTwo": "",
+        "size": "assets/fossils/size/2x2.png"
+      },
+      {
+        "id": 20,
+        "name": "Dimetrodon torso",
+        "icon": "assets/fossils/DimetrodonTorso.png",
+        "sellPrice": 5000,
+        "colorOne": "#e6ccb14",
+        "colorTwo": "",
+        "size": "assets/fossils/size/2x2.png"
+      },
+      {
+        "id": 21,
+        "name": "Dinosaur track",
+        "icon": "assets/fossils/DinosaurTrack.png",
+        "sellPrice": 1000,
+        "colorOne": "#e9dfaf",
+        "colorTwo": "#e6ccb10",
+        "size": "assets/fossils/size/1x1.png"
+      },
+      {
+        "id": 22,
+        "name": "Diplo skull",
+        "icon": "assets/fossils/DiploSkull.png",
+        "sellPrice": 5000,
+        "colorOne": "#e6ccb11",
+        "colorTwo": "",
+        "size": "assets/fossils/size/2x2.png"
+      },
+      {
+        "id": 23,
+        "name": "Diplo neck",
+        "icon": "assets/fossils/DiploNeck.png",
+        "sellPrice": 4500,
+        "colorOne": "#e6ccb12",
+        "colorTwo": "",
+        "size": "assets/fossils/size/2x2.png"
+      },
+      {
+        "id": 24,
+        "name": "Diplo chest",
+        "icon": "assets/fossils/DiploChest.png",
+        "sellPrice": 4000,
+        "colorOne": "#e6ccb13",
+        "colorTwo": "",
+        "size": "assets/fossils/size/2x2.png"
+      },
+      {
+        "id": 25,
+        "name": "Diplo pelvis",
+        "icon": "assets/fossils/DiploPelvis.png",
+        "sellPrice": 4500,
+        "colorOne": "#e6ccb14",
+        "colorTwo": "",
+        "size": "assets/fossils/size/2x2.png"
+      },
+      {
+        "id": 26,
+        "name": "Diplo tail",
+        "icon": "assets/fossils/DiploTail.png",
+        "sellPrice": 5000,
+        "colorOne": "#e6ccb15",
+        "colorTwo": "",
+        "size": "assets/fossils/size/2x2.png"
+      },
+      {
+        "id": 27,
+        "name": "Diplo tail tip",
+        "icon": "assets/fossils/DiploTailTip.png",
+        "sellPrice": 4000,
+        "colorOne": "#e6ccb16",
+        "colorTwo": "",
+        "size": "assets/fossils/size/2x2.png"
+      },
+      {
+        "id": 28,
+        "name": "Dunkleosteus",
+        "icon": "assets/fossils/Dunkleosteus.png",
+        "sellPrice": 3500,
+        "colorOne": "#ccc",
+        "colorTwo": "#e6ccb17",
+        "size": "assets/fossils/size/2x2.png"
+      },
+      {
+        "id": 29,
+        "name": "Eusthenopteron",
+        "icon": "assets/fossils/Eusthenopteron.png",
+        "sellPrice": 2000,
+        "colorOne": "#e6ccb18",
+        "colorTwo": "",
+        "size": "assets/fossils/size/1x1.png"
+      },
+      {
+        "id": 30,
+        "name": "Iguanodon skull",
+        "icon": "assets/fossils/IguanodonSkull.png",
+        "sellPrice": 4000,
+        "colorOne": "#e6ccb19",
+        "colorTwo": "",
+        "size": "assets/fossils/size/1x1.png"
+      },
+      {
+        "id": 31,
+        "name": "Iguanodon torso",
+        "icon": "assets/fossils/IguanodonTorso.png",
+        "sellPrice": 3500,
+        "colorOne": "#e6ccb20",
+        "colorTwo": "",
+        "size": "assets/fossils/size/1x1.png"
+      },
+      {
+        "id": 32,
+        "name": "Iguanodon tail",
+        "icon": "assets/fossils/IguanodonTail.png",
+        "sellPrice": 3000,
+        "colorOne": "#e6ccb21",
+        "colorTwo": "",
+        "size": "assets/fossils/size/1x1.png"
+      },
+      {
+        "id": 33,
+        "name": "Juramaia",
+        "icon": "assets/fossils/Juramaia.png",
+        "sellPrice": 1500,
+        "colorOne": "#e9dfaf",
+        "colorTwo": "#e6ccb10",
+        "size": "assets/fossils/size/1x1.png"
+      },
+      {
+        "id": 34,
+        "name": "Mammoth skull",
+        "icon": "assets/fossils/MammothSkull.png",
+        "sellPrice": 3000,
+        "colorOne": "#e9dfaf",
+        "colorTwo": "#e6ccb11",
+        "size": "assets/fossils/size/2x2.png"
+      },
+      {
+        "id": 35,
+        "name": "Mammoth torso",
+        "icon": "assets/fossils/MammothTorso.png",
+        "sellPrice": 2500,
+        "colorOne": "#e9dfaf",
+        "colorTwo": "#e6ccb12",
+        "size": "assets/fossils/size/2x2.png"
+      },
+      {
+        "id": 36,
+        "name": "Megacero skull",
+        "icon": "assets/fossils/MegaceroSkull.png",
+        "sellPrice": 4500,
+        "colorOne": "#e6ccb13",
+        "colorTwo": "",
+        "size": "assets/fossils/size/2x2.png"
+      },
+      {
+        "id": 37,
+        "name": "Megacero tail",
+        "icon": "assets/fossils/MegaceroTail.png",
+        "sellPrice": 3000,
+        "colorOne": "#e6ccb14",
+        "colorTwo": "",
+        "size": "assets/fossils/size/2x2.png"
+      },
+      {
+        "id": 38,
+        "name": "Megacero torso",
+        "icon": "assets/fossils/MegaceroTorso.png",
+        "sellPrice": 3500,
+        "colorOne": "#e6ccb15",
+        "colorTwo": "",
+        "size": "assets/fossils/size/2x2.png"
+      },
+      {
+        "id": 39,
+        "name": "Right megalo side",
+        "icon": "assets/fossils/RightMegaloSide.png",
+        "sellPrice": 5500,
+        "colorOne": "#e9dfaf",
+        "colorTwo": "#e6ccb12",
+        "size": "assets/fossils/size/2x2.png"
+      },
+      {
+        "id": 40,
+        "name": "Left megalo side",
+        "icon": "assets/fossils/LeftMegaloSide.png",
+        "sellPrice": 400,
+        "colorOne": "#e9dfaf",
+        "colorTwo": "#e6ccb12",
+        "size": "assets/fossils/size/2x2.png"
+      },
+      {
+        "id": 41,
+        "name": "Myllokunmingia",
+        "icon": "assets/fossils/Myllokunmingia.png",
+        "sellPrice": 1500,
+        "colorOne": "#ccc",
+        "colorTwo": "",
+        "size": "assets/fossils/size/1x1.png"
+      },
+      {
+        "id": 42,
+        "name": "Ophthalmo skull",
+        "icon": "assets/fossils/OphthalmoSkull.png",
+        "sellPrice": 2500,
+        "colorOne": "#e6ccb12",
+        "colorTwo": "",
+        "size": "assets/fossils/size/2x2.png"
+      },
+      {
+        "id": 43,
+        "name": "Ophthalmo torso",
+        "icon": "assets/fossils/OphthalmoTorso.png",
+        "sellPrice": 2000,
+        "colorOne": "#e6ccb12",
+        "colorTwo": "",
+        "size": "assets/fossils/size/2x2.png"
+      },
+      {
+        "id": 44,
+        "name": "Pachy skull",
+        "icon": "assets/fossils/PachySkull.png",
+        "sellPrice": 4000,
+        "colorOne": "#e6ccb12",
+        "colorTwo": "",
+        "size": "assets/fossils/size/2x2.png"
+      },
+      {
+        "id": 45,
+        "name": "Pachy tail",
+        "icon": "assets/fossils/PachyTail.png",
+        "sellPrice": 3500,
+        "colorOne": "#e6ccb12",
+        "colorTwo": "",
+        "size": "assets/fossils/size/2x2.png"
+      },
+      {
+        "id": 46,
+        "name": "Parasaur skull",
+        "icon": "assets/fossils/ParasaurSkull.png",
+        "sellPrice": 3500,
+        "colorOne": "#e6ccb13",
+        "colorTwo": "",
+        "size": "assets/fossils/size/2x2.png"
+      },
+      {
+        "id": 47,
+        "name": "Parasaur torso",
+        "icon": "assets/fossils/ParasaurTorso.png",
+        "sellPrice": 3000,
+        "colorOne": "#e6ccb14",
+        "colorTwo": "",
+        "size": "assets/fossils/size/2x2.png"
+      },
+      {
+        "id": 48,
+        "name": "Parasaur tail",
+        "icon": "assets/fossils/ParasaurTail.png",
+        "sellPrice": 2500,
+        "colorOne": "#e6ccb15",
+        "colorTwo": "",
+        "size": "assets/fossils/size/2x2.png"
+      },
+      {
+        "id": 49,
+        "name": "Plesio skull",
+        "icon": "assets/fossils/PlesioSkull.png",
+        "sellPrice": 4000,
+        "colorOne": "#e6ccb16",
+        "colorTwo": "",
+        "size": "assets/fossils/size/2x2.png"
+      },
+      {
+        "id": 50,
+        "name": "Plesio torso",
+        "icon": "assets/fossils/PlesioTorso.png",
+        "sellPrice": 4500,
+        "colorOne": "#e6ccb17",
+        "colorTwo": "",
+        "size": "assets/fossils/size/2x2.png"
+      },
+      {
+        "id": 51,
+        "name": "Plesio tail",
+        "icon": "assets/fossils/PlesioTail.png",
+        "sellPrice": 4500,
+        "colorOne": "#e6ccb18",
+        "colorTwo": "",
+        "size": "assets/fossils/size/2x2.png"
+      },
+      {
+        "id": 52,
+        "name": "Ptera body",
+        "icon": "assets/fossils/PteraBody.png",
+        "sellPrice": 4000,
+        "colorOne": "#e6ccb19",
+        "colorTwo": "",
+        "size": "assets/fossils/size/2x2.png"
+      },
+      {
+        "id": 53,
+        "name": "Right ptera wing",
+        "icon": "assets/fossils/RightPteraWing.png",
+        "sellPrice": 4500,
+        "colorOne": "#e6ccb20",
+        "colorTwo": "",
+        "size": "assets/fossils/size/2x2.png"
+      },
+      {
+        "id": 54,
+        "name": "Left ptera wing",
+        "icon": "assets/fossils/LeftPteraWing.png",
+        "sellPrice": 4500,
+        "colorOne": "#e6ccb21",
+        "colorTwo": "",
+        "size": "assets/fossils/size/2x2.png"
+      },
+      {
+        "id": 55,
+        "name": "Right quetzal wing",
+        "icon": "assets/fossils/RightQuetzalWing.png",
+        "sellPrice": 5000,
+        "colorOne": "#e6ccb22",
+        "colorTwo": "",
+        "size": "assets/fossils/size/2x2.png"
+      },
+      {
+        "id": 56,
+        "name": "Quetzal torso",
+        "icon": "assets/fossils/QuetzalTorso.png",
+        "sellPrice": 4500,
+        "colorOne": "#e6ccb23",
+        "colorTwo": "",
+        "size": "assets/fossils/size/2x2.png"
+      },
+      {
+        "id": 57,
+        "name": "Left quetzal wing",
+        "icon": "assets/fossils/LeftQuetzalWing.png",
+        "sellPrice": 5000,
+        "colorOne": "#e6ccb24",
+        "colorTwo": "",
+        "size": "assets/fossils/size/2x2.png"
+      },
+      {
+        "id": 58,
+        "name": "Sabertooth skull",
+        "icon": "assets/fossils/SabertoothSkull.png",
+        "sellPrice": 2500,
+        "colorOne": "#e6ccb25",
+        "colorTwo": "",
+        "size": "assets/fossils/size/2x2.png"
+      },
+      {
+        "id": 59,
+        "name": "Sabertooth tail",
+        "icon": "assets/fossils/SabertoothTail.png",
+        "sellPrice": 2000,
+        "colorOne": "#e6ccb26",
+        "colorTwo": "",
+        "size": "assets/fossils/size/2x2.png"
+      },
+      {
+        "id": 60,
+        "name": "Shark-tooth pattern",
+        "icon": "assets/fossils/SharkToothPattern.png",
+        "sellPrice": 1000,
+        "colorOne": "#e9dfaf",
+        "colorTwo": "#e6ccb12",
+        "size": "assets/fossils/size/1x1.png"
+      },
+      {
+        "id": 61,
+        "name": "Spino skull",
+        "icon": "assets/fossils/SpinoSkull.png",
+        "sellPrice": 4000,
+        "colorOne": "#e6ccb13",
+        "colorTwo": "",
+        "size": "assets/fossils/size/2x2.png"
+      },
+      {
+        "id": 62,
+        "name": "Spino torso",
+        "icon": "assets/fossils/SpinoTorso.png",
+        "sellPrice": 3000,
+        "colorOne": "#e6ccb14",
+        "colorTwo": "",
+        "size": "assets/fossils/size/2x2.png"
+      },
+      {
+        "id": 63,
+        "name": "Spino tail",
+        "icon": "assets/fossils/SpinoTail.png",
+        "sellPrice": 2500,
+        "colorOne": "#e6ccb15",
+        "colorTwo": "",
+        "size": "assets/fossils/size/2x2.png"
+      },
+      {
+        "id": 64,
+        "name": "Stego skull",
+        "icon": "assets/fossils/StegoSkull.png",
+        "sellPrice": 5000,
+        "colorOne": "#e6ccb16",
+        "colorTwo": "",
+        "size": "assets/fossils/size/2x2.png"
+      },
+      {
+        "id": 65,
+        "name": "Stego torso",
+        "icon": "assets/fossils/StegoTorso.png",
+        "sellPrice": 4500,
+        "colorOne": "#e6ccb17",
+        "colorTwo": "",
+        "size": "assets/fossils/size/2x2.png"
+      },
+      {
+        "id": 66,
+        "name": "Stego tail",
+        "icon": "assets/fossils/StegoTail.png",
+        "sellPrice": 4000,
+        "colorOne": "#e6ccb18",
+        "colorTwo": "",
+        "size": "assets/fossils/size/2x2.png"
+      },
+      {
+        "id": 67,
+        "name": "T. rex skull",
+        "icon": "assets/fossils/TRexSkull.png",
+        "sellPrice": 6000,
+        "colorOne": "#e6ccb19",
+        "colorTwo": "",
+        "size": "assets/fossils/size/2x2.png"
+      },
+      {
+        "id": 68,
+        "name": "T. rex torso",
+        "icon": "assets/fossils/TRexTorso.png",
+        "sellPrice": 5500,
+        "colorOne": "#e6ccb20",
+        "colorTwo": "",
+        "size": "assets/fossils/size/2x2.png"
+      },
+      {
+        "id": 69,
+        "name": "T. rex tail",
+        "icon": "assets/fossils/TRexTail.png",
+        "sellPrice": 5000,
+        "colorOne": "#e6ccb21",
+        "colorTwo": "",
+        "size": "assets/fossils/size/2x2.png"
+      },
+      {
+        "id": 70,
+        "name": "Tricera skull",
+        "icon": "assets/fossils/TriceraSkull.png",
+        "sellPrice": 55000,
+        "colorOne": "#e6ccb22",
+        "colorTwo": "",
+        "size": "assets/fossils/size/2x2.png"
+      },
+      {
+        "id": 71,
+        "name": "Tricera torso",
+        "icon": "assets/fossils/TriceraTorso.png",
+        "sellPrice": 5000,
+        "colorOne": "#e6ccb23",
+        "colorTwo": "",
+        "size": "assets/fossils/size/2x2.png"
+      },
+      {
+        "id": 72,
+        "name": "Tricera tail",
+        "icon": "assets/fossils/TriceraTail.png",
+        "sellPrice": 4500,
+        "colorOne": "#e6ccb24",
+        "colorTwo": "",
+        "size": "assets/fossils/size/2x2.png"
+      },
+      {
+        "id": 73,
+        "name": "Trilobite",
+        "icon": "assets/fossils/Trilobite.png",
+        "sellPrice": 1300,
+        "colorOne": "#e9dfaf",
+        "colorTwo": "#e6ccb12",
+        "size": "assets/fossils/size/1x1.png"
+      }
+]
