@@ -12,7 +12,7 @@ const BugsCard = ({data, onSort, sortConfig }) => {
           active={sortConfig.key === 'sellPrice'}
           direction={sortConfig.direction}
           onClick={() => onSort('sellPrice')}
-          className='ps-3'
+          className='ps-3 mt-4'
          
         >
           Sell Price
@@ -31,16 +31,17 @@ const BugsCard = ({data, onSort, sortConfig }) => {
 
               </div>  
               <Divider className='pb-3' style={{Color: '#0cc6b8'}}/>
-              <CardContent className='d-flex flex-column mb-3'>            
-                  <Typography >Location: {bug.location}</Typography>
-                  <Typography >Weather: {bug.weather}</Typography>
-                  <Typography >Time: {bug.time}</Typography>
-                  <table style={{ width: '100%', borderCollapse: 'collapse' }}>
+              <CardContent className='d-flex flex-column mb-3'> 
+              <table style={{ width: '100%', borderCollapse: 'collapse' }}>
                     <tbody>
                       {bug.north && <MonthRow label="North:" values={bug.north} />}
                       {bug.south && <MonthRow label="South:" values={bug.south} />}
                     </tbody>
-                  </table>      
+                  </table>             
+                  <Typography ><span className="label me-3">Location:</span> {bug.location}</Typography>
+                  <Typography ><span className="label me-3">Weather:</span> {bug.weather}</Typography>
+                  <Typography ><span className="label me-5">Time:</span> {bug.time}</Typography>
+                      
                   <Typography ><img src={Bells} alt="Bells" style={{width: 50}}/>{bug.sellPrice} Bells</Typography>      
               </CardContent>
             </Card>
