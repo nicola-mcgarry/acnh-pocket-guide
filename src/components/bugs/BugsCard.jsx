@@ -49,7 +49,7 @@ const BugsCard = ({data, onSort, sortConfig }) => {
         ))}
       </Grid>
     </div>
-  );  
+  );   
 };
 
 
